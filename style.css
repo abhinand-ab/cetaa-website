@@ -1,4 +1,6 @@
-/* ===== GENERAL ===== */
+/* =========================
+   GENERAL
+========================= */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,14 +8,29 @@ body {
 }
 
 
-/* ===== NAVBAR ===== */
+/* =========================
+   GLOBAL CONTAINER (FOR HOME PAGE)
+========================= */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
 header {
+    background: #002147;
+    padding: 15px 0;
+    color: white;
+}
+
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #002147;
-    padding: 15px 40px;
-    color: white;
 }
 
 nav a {
@@ -28,7 +45,25 @@ nav a:hover {
 }
 
 
-/* ===== ABOUT SECTION ===== */
+/* =========================
+   HERO SECTION (HOME PAGE)
+========================= */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to right, #004aad, #00c6ff);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
 .about {
     padding: 60px 20px;
     text-align: center;
@@ -37,35 +72,69 @@ nav a:hover {
 }
 
 
-/* ===== BUTTON ===== */
+/* =========================
+   BUTTON
+========================= */
 .btn {
     margin-top: 20px;
-    background: #004aad;
-    color: white;
+    background: white;
+    color: #004aad;
     padding: 12px 25px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
 }
 
 .btn:hover {
     background: #002147;
+    color: white;
 }
 
 
-/* ===== RENOVATION SECTION ===== */
+/* =========================
+   STATS SECTION (HOME PAGE)
+========================= */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* =========================
+   RENOVATION PAGE
+========================= */
 .renovation-container {
     max-width: 1200px;
     margin: auto;
-    padding: 80px 20px;   /* more vertical spacing */
+    padding: 80px 20px;
     text-align: center;
 }
 
 
-/* ===== SECTION TITLES ===== */
+/* SECTION TITLES */
 .section-title {
     margin-top: 70px;
-    margin-bottom: 40px;   /* space below title */
+    margin-bottom: 40px;
     font-size: 28px;
     color: #002147;
     border-bottom: 3px solid #004aad;
@@ -74,20 +143,19 @@ nav a:hover {
 }
 
 
-/* ===== HORIZONTAL IMAGE ROW ===== */
+/* IMAGE ROW */
 .image-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-
-    margin-top: 40px;      /* space above cards */
-    margin-bottom: 40px;   /* space below cards */
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 
-/* ===== IMAGE CARD ===== */
+/* IMAGE CARD */
 .image-card {
     width: 280px;
     background: white;
@@ -102,16 +170,12 @@ nav a:hover {
     transform: translateY(-8px);
 }
 
-
-/* ===== FIXED IMAGE SIZE ===== */
 .image-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-
-/* ===== CAPTION ===== */
 .caption {
     padding: 12px;
     font-weight: 600;
@@ -119,7 +183,7 @@ nav a:hover {
 }
 
 
-/* ===== BEFORE AFTER LABEL ===== */
+/* BEFORE AFTER LABEL */
 .tag {
     position: absolute;
     top: 10px;
@@ -134,7 +198,9 @@ nav a:hover {
 .after { background: #2ecc71; }
 
 
-/* ===== FOOTER ===== */
+/* =========================
+   FOOTER
+========================= */
 .footer {
     background: black;
     color: white;
@@ -143,13 +209,15 @@ nav a:hover {
 }
 
 
-/* ===== MOBILE RESPONSIVE ===== */
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
 @media (max-width: 600px) {
 
-    header {
+    .nav-container {
         flex-direction: column;
-        text-align: center;
         gap: 10px;
+        text-align: center;
     }
 
     .image-row {
@@ -160,162 +228,8 @@ nav a:hover {
     .section-title {
         font-size: 22px;
     }
-}
-/* ===== GENERAL ===== */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
-}
 
-
-/* ===== NAVBAR ===== */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #002147;
-    padding: 15px 40px;
-    color: white;
-}
-
-nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #00c6ff;
-}
-
-
-/* ===== ABOUT SECTION ===== */
-.about {
-    padding: 60px 20px;
-    text-align: center;
-    max-width: 800px;
-    margin: auto;
-}
-
-
-/* ===== BUTTON ===== */
-.btn {
-    margin-top: 20px;
-    background: #004aad;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background: #002147;
-}
-
-
-/* ===== RENOVATION SECTION ===== */
-.renovation-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.section-title {
-    margin-top: 60px;
-    margin-bottom: 30px;
-    font-size: 28px;
-    color: #002147;
-    border-bottom: 3px solid #004aad;
-    display: inline-block;
-    padding-bottom: 6px;
-}
-
-
-/* ===== HORIZONTAL IMAGE ROW (DESKTOP) ===== */
-.image-row {
-    display: flex;
-    flex-direction: row;          /* ALWAYS horizontal */
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-
-/* ===== IMAGE CARD ===== */
-.image-card {
-    width: 280px;
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    position: relative;
-    transition: 0.3s;
-}
-
-.image-card:hover {
-    transform: translateY(-8px);
-}
-
-
-/* ===== FIXED IMAGE SIZE ===== */
-.image-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-
-/* ===== CAPTION ===== */
-.caption {
-    padding: 12px;
-    font-weight: 600;
-    color: #333;
-}
-
-
-/* ===== BEFORE AFTER LABEL ===== */
-.tag {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 5px 10px;
-    color: white;
-    font-size: 12px;
-    border-radius: 5px;
-}
-
-.before { background: #e74c3c; }
-.after { background: #2ecc71; }
-
-
-/* ===== FOOTER ===== */
-.footer {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
-
-/* ===== MOBILE RESPONSIVE (ONLY PHONES) ===== */
-@media (max-width: 600px) {
-
-    header {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .image-row {
-        flex-direction: column;   /* stack vertically on phone */
-        align-items: center;
-    }
-
-    .section-title {
-        font-size: 22px;
+    .hero h1 {
+        font-size: 28px;
     }
 }
