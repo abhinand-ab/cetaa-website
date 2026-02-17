@@ -21,45 +21,10 @@ nav a {
     margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 nav a:hover {
     color: #00c6ff;
-}
-
-
-/* ===== HERO ===== */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(to right,#004aad,#00c6ff);
-    color: white;
-}
-
-.hero h1 {
-    font-size: 40px;
-}
-
-
-/* ===== BUTTON ===== */
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    background: white;
-    color: #004aad;
-    padding: 12px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #002147;
-    color: white;
 }
 
 
@@ -72,31 +37,23 @@ nav a:hover {
 }
 
 
-/* ===== STATS ===== */
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px;
-    flex-wrap: wrap;
+/* ===== BUTTON ===== */
+.btn {
+    margin-top: 20px;
+    background: #004aad;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
-.card {
-    background: white;
-    padding: 30px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-8px);
+.btn:hover {
+    background: #002147;
 }
 
 
-/* ===== RENOVATION PAGE ===== */
+/* ===== RENOVATION SECTION ===== */
 .renovation-container {
     max-width: 1200px;
     margin: auto;
@@ -115,15 +72,13 @@ nav a:hover {
 }
 
 
-/* ===== HORIZONTAL IMAGE ALIGNMENT ===== */
+/* ===== HORIZONTAL IMAGE ROW ===== */
 .image-row {
-    display: inline-flex;      /* shrink to content width */
+    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px;                 /* space only between cards */
-    margin-top: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
-
 
 
 /* ===== IMAGE CARD ===== */
@@ -141,24 +96,19 @@ nav a:hover {
     transform: translateY(-8px);
 }
 
-
-/* ===== SAME IMAGE SIZE ===== */
 .image-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-
-/* ===== CAPTION ===== */
 .caption {
     padding: 12px;
     font-weight: 600;
-    color: #333;
 }
 
 
-/* ===== BEFORE AFTER LABEL ===== */
+/* ===== BEFORE AFTER TAG ===== */
 .tag {
     position: absolute;
     top: 10px;
@@ -169,8 +119,8 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.before { background: #d9534f; }
-.after { background: #28a745; }
+.before { background: #e74c3c; }
+.after { background: #2ecc71; }
 
 
 /* ===== FOOTER ===== */
@@ -179,31 +129,11 @@ nav a:hover {
     color: white;
     text-align: center;
     padding: 15px;
-    font-size: 14px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 
-/* ===== MOBILE RESPONSIVE ===== */
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .stats {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .image-row {
         flex-direction: column;
         align-items: center;
