@@ -118,11 +118,16 @@ nav a:hover {
 /* ===== HORIZONTAL IMAGE ALIGNMENT ===== */
 .image-row {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    justify-content: center;   /* centers horizontally */
+    align-items: center;
+    gap: 40px;
     margin-top: 30px;
+
+    width: fit-content;        /* keeps items together */
+    margin-left: auto;         /* center block */
+    margin-right: auto;
 }
+
 
 
 /* ===== IMAGE CARD ===== */
