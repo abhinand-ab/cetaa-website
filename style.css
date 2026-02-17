@@ -136,13 +136,17 @@ nav a:hover {
 
 /* ===== RENOVATION PAGE ===== */
 
+/* ===== RENOVATION PAGE ===== */
+
 .renovation-container {
-    padding: 60px 40px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
     text-align: center;
 }
 
 .section-title {
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 30px;
     font-size: 28px;
     color: #002147;
@@ -151,43 +155,46 @@ nav a:hover {
     padding-bottom: 6px;
 }
 
-.image-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+/* PERFECT GRID ALIGNMENT */
+.image-grid-pro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
+    margin-top: 30px;
 }
 
+/* CARD */
 .image-card {
-    width: 300px;
     background: white;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    transition: transform 0.3s;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: 0.3s;
     position: relative;
 }
 
 .image-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
 }
 
+/* FIXED IMAGE SIZE */
 .image-card img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
 }
 
+/* CAPTION */
 .caption {
     padding: 12px;
-    font-weight: bold;
-    color: #333;
+    font-weight: 600;
 }
 
+/* LABELS */
 .tag {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 12px;
+    left: 12px;
     padding: 5px 10px;
     color: white;
     font-size: 12px;
@@ -196,6 +203,7 @@ nav a:hover {
 
 .before { background: #d9534f; }
 .after { background: #28a745; }
+
 
 
 
