@@ -155,4 +155,71 @@ nav a:hover {
     .image-grid img {
         width: 90%;
     }
+    .renovation-container {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.section-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #002147;
+    border-bottom: 3px solid #004aad;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.image-card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.image-card:hover {
+    transform: translateY(-10px);
+}
+
+.image-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.caption {
+    padding: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* BEFORE AFTER LABEL */
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.before {
+    background: #d9534f;
+}
+
+.after {
+    background: #28a745;
+}
+
 }
