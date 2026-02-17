@@ -96,92 +96,7 @@ nav a:hover {
 }
 
 
-/* ===== IMAGE GALLERY ===== */
-.gallery {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* ===== HORIZONTAL IMAGE ALIGNMENT ===== */
-
-.image-row {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;   /* moves to next line if screen small */
-    margin-top: 30px;
-}
-
-/* CARD */
-.image-card {
-    width: 280px;
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    position: relative;
-    transition: 0.3s;
-}
-
-.image-card:hover {
-    transform: translateY(-8px);
-}
-
-/* SAME IMAGE SIZE */
-.image-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-/* CAPTION */
-.caption {
-    padding: 12px;
-    font-weight: 600;
-}
-
-/* LABEL */
-.tag {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 5px 10px;
-    color: white;
-    font-size: 12px;
-    border-radius: 5px;
-}
-
-.before { background: #d9534f; }
-.after { background: #28a745; }
-
-.image-grid img {
-    width: 320px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    transition: 0.3s;
-}
-
-.image-grid img:hover {
-    transform: scale(1.05);
-}
-
-.footer {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-
-
 /* ===== RENOVATION PAGE ===== */
-
-/* ===== RENOVATION PAGE ===== */
-
 .renovation-container {
     max-width: 1200px;
     margin: auto;
@@ -199,46 +114,54 @@ nav a:hover {
     padding-bottom: 6px;
 }
 
-/* PERFECT GRID ALIGNMENT */
-.image-grid-pro {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+/* ===== HORIZONTAL IMAGE ALIGNMENT ===== */
+.image-row {
+    display: flex;
+    justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 
-/* CARD */
+
+/* ===== IMAGE CARD ===== */
 .image-card {
+    width: 280px;
     background: white;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    transition: 0.3s;
     position: relative;
+    transition: 0.3s;
 }
 
 .image-card:hover {
     transform: translateY(-8px);
 }
 
-/* FIXED IMAGE SIZE */
+
+/* ===== SAME IMAGE SIZE ===== */
 .image-card img {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
 }
 
-/* CAPTION */
+
+/* ===== CAPTION ===== */
 .caption {
     padding: 12px;
     font-weight: 600;
+    color: #333;
 }
 
-/* LABELS */
+
+/* ===== BEFORE AFTER LABEL ===== */
 .tag {
     position: absolute;
-    top: 12px;
-    left: 12px;
+    top: 10px;
+    left: 10px;
     padding: 5px 10px;
     color: white;
     font-size: 12px;
@@ -249,6 +172,17 @@ nav a:hover {
 .after { background: #28a745; }
 
 
+/* ===== FOOTER ===== */
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
 
 /* ===== MOBILE RESPONSIVE ===== */
@@ -269,11 +203,7 @@ nav a:hover {
         align-items: center;
     }
 
-    .image-grid img {
-        width: 90%;
-    }
-
-    .image-section {
+    .image-row {
         flex-direction: column;
         align-items: center;
     }
