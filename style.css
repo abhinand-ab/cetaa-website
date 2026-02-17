@@ -28,7 +28,7 @@ nav a:hover {
 }
 
 
-/* ===== ABOUT ===== */
+/* ===== ABOUT SECTION ===== */
 .about {
     padding: 60px 20px;
     text-align: center;
@@ -72,9 +72,10 @@ nav a:hover {
 }
 
 
-/* ===== HORIZONTAL IMAGE ROW ===== */
+/* ===== HORIZONTAL IMAGE ROW (DESKTOP) ===== */
 .image-row {
     display: flex;
+    flex-direction: row;          /* ALWAYS horizontal */
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
@@ -96,19 +97,24 @@ nav a:hover {
     transform: translateY(-8px);
 }
 
+
+/* ===== FIXED IMAGE SIZE ===== */
 .image-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
+
+/* ===== CAPTION ===== */
 .caption {
     padding: 12px;
     font-weight: 600;
+    color: #333;
 }
 
 
-/* ===== BEFORE AFTER TAG ===== */
+/* ===== BEFORE AFTER LABEL ===== */
 .tag {
     position: absolute;
     top: 10px;
@@ -132,10 +138,21 @@ nav a:hover {
 }
 
 
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
-    .image-row {
+/* ===== MOBILE RESPONSIVE (ONLY PHONES) ===== */
+@media (max-width: 600px) {
+
+    header {
         flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .image-row {
+        flex-direction: column;   /* stack vertically on phone */
         align-items: center;
+    }
+
+    .section-title {
+        font-size: 22px;
     }
 }
